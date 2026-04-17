@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Form Latin — Review Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background-color: #1A0F00;
+    color: #F5EDD8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-image: radial-gradient(ellipse at top, #3D1F00 0%, transparent 60%);
+  }
+  header { text-align: center; margin-bottom: 3rem; }
+  header::before {
+    content: '✦ MEMORIA PRESS · SECOND EDITION ✦';
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    color: #C9A227;
+    opacity: 0.7;
+    margin-bottom: 0.8rem;
+  }
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 900;
+    color: #C9A227;
+    text-shadow: 0 2px 16px rgba(201,162,39,0.4);
+    line-height: 1.2;
+  }
+  h1 span { color: #F5EDD8; font-weight: 400; }
+  header p { margin-top: 0.6rem; font-style: italic; color: #C8B89A; font-size: 1.1rem; }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .card {
+    background: rgba(61,31,0,0.6);
+    border: 1px solid rgba(201,162,39,0.35);
+    border-radius: 10px;
+    padding: 2rem 1.8rem;
+    width: 260px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+  .card:hover {
+    border-color: #C9A227;
+    background: rgba(61,31,0,0.9);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(201,162,39,0.2);
+  }
+  .card .num {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
+  .card-1 .num { color: #C9A227; }
+  .card-2 .num { color: #4A90A4; }
+  .card-3 .num { color: #7B4F9E; }
+
+  .card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.8rem;
+  }
+  .card-1 h2 { color: #C9A227; }
+  .card-2 h2 { color: #4A90A4; }
+  .card-3 h2 { color: #7B4F9E; }
+
+  .card p {
+    font-size: 0.9rem;
+    color: #C8B89A;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .card .arrow {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    transition: background 0.2s;
+  }
+  .card-1 .arrow { border: 1px solid #C9A227; color: #C9A227; }
+  .card-2 .arrow { border: 1px solid #4A90A4; color: #4A90A4; }
+  .card-3 .arrow { border: 1px solid #7B4F9E; color: #7B4F9E; }
+  .card:hover .arrow { color: #1A0F00; }
+  .card-1:hover .arrow { background: #C9A227; }
+  .card-2:hover .arrow { background: #4A90A4; }
+  .card-3:hover .arrow { background: #7B4F9E; }
+
+  footer {
+    margin-top: 3rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: #C9A227;
+    opacity: 0.5;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>First Form Latin <span>·</span> Review Hub</h1>
+  <p>Select a review to begin · Memoria Press, Second Edition</p>
+</header>
+
+<div class="cards">
+  <a class="card card-1" href="review1.html">
+    <div class="num">I</div>
+    <h2>REVIEW ONE</h2>
+    <p>Vocabulary · Grammar · Declensions · Conjugations · Final Exam Format</p>
+    <div class="arrow">START →</div>
+  </a>
+
+  <a class="card card-2" href="review2.html">
+    <div class="num">II</div>
+    <h2>REVIEW TWO</h2>
+    <p>Nouns & Adjectives · Cases & Syntax · 2nd Conjugation · Parsing</p>
+    <div class="arrow">START →</div>
+  </a>
+
+  <a class="card card-3" href="review3.html">
+    <div class="num">III</div>
+    <h2>REVIEW THREE</h2>
+    <p>Unit V Vocab · Latin Sayings · Verb Forms · Lessons 33 & 34</p>
+    <div class="arrow">START →</div>
+  </a>
+</div>
+
+<footer>FIRST FORM LATIN · FINAL EXAM PREPARATION</footer>
+
+</body>
+</html>
